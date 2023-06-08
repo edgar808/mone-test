@@ -1,5 +1,5 @@
 {
-  "name": "agora-api",
+  "name": "mone-api",
   "version": "0.0.2",
   "description": "",
   "main": "src/server/index.ts",

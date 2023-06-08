@@ -1,6 +1,5 @@
 import { IsDate, IsDefined, IsEmail, IsJWT, IsNotEmpty, IsString, Matches } from 'class-validator';
 
-
 export class UserCreteDto{
     @IsNotEmpty()
     @IsEmail()
@@ -36,7 +35,6 @@ export class UserLoginRespDto {
     @IsJWT()
     token!:string
 }
-
 
 export class UserResp{
     @IsString()

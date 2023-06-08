@@ -39,7 +39,7 @@ export class UserService {
 
     @Transactional()
     async login(data: UserLoginDto) {
-        const user = await this.userRepository.findOne({email:data.email});
+        const user = await this.userRepository.findOne({ email:data.email });
         if (!user) throw new Exception(ErrorCode.BadRequestError, { error: ErrorMessages.InvalidCredentials });
 
         const check = await this.checkPassword(data.password, user.password);
